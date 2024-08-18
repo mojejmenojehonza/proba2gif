@@ -150,7 +150,7 @@ def process_images(input_dir, output_gif, calibration_image, frame_duration, tin
 
 def main():
     parser = argparse.ArgumentParser(description="Process sun images and create a GIF.")
-    parser.add_argument("--input_dir", help="Directory containing input images")
+    parser.add_argument("input_dir", help="Directory containing input images")
     parser.add_argument("--output_file", default="proba2.gif", help="Output GIF/WEBP filename (default: proba2.gif)")
     parser.add_argument("--calibration_image", default=".calibration.png", help="Calibration image filename (default: .calibration.png)")
     parser.add_argument("--frame_duration", type=int, default=100, help="Frame duration in milliseconds (default: 100)")
