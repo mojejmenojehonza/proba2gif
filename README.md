@@ -2,7 +2,10 @@
 Automatically rotates and centers images from proba2 dumps and writes it into .gif or .webp file
 ## Installation
 ### Prerequisities
-python3, imageio (run `pip3 install imageio` to install)
+python3, imageio , opencv and numpy
+run this to install all
+
+`pip install opencv-python numpy imageio`
 ### Clone
 ```
 git clone https://github.com/mojejmenojehonza/proba2gif # or manually download zip and extract it
