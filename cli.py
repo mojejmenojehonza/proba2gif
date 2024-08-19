@@ -137,7 +137,7 @@ def process_images(input_dir, output_gif, calibration_image, frame_duration, tin
         # Find best rotation
         rotations = [
             (angle, calculate_image_difference(calibration_crop, rotate_image(crop, angle)))
-            for angle in range(0, ROTATION_RANGE, ROTATION_STEP)
+            for angle in range(-1, ROTATION_RANGE, ROTATION_STEP)
         ]
         best_angle, _ = min(rotations, key=lambda x: x[1])
         rotated = rotate_image(crop, best_angle)
