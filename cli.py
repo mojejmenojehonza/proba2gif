@@ -146,7 +146,7 @@ def process_images(input_dir, output_gif, calibration_image, frame_duration, tin
         frames.append(enhanced)
 
     # Save as GIF
-    imageio.mimsave(output_gif, frames, loop=65535 duration=frame_duration)
+    imageio.mimsave(output_gif, frames, loop=65535, duration=frame_duration)
 
 def main():
     parser = argparse.ArgumentParser(description="Process sun images and create a GIF.")
