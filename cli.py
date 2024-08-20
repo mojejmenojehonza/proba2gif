@@ -119,7 +119,6 @@ def process_images(input_dir, output_gif, calibration_image, frame_duration, tin
     calibration_img = cv2.imread(calibration_image)
     calibration_center = find_sun_center(calibration_img)
     calibration_crop = crop_image(calibration_img, calibration_center, OUTPUT_SIZE)
-    calibration_crop = enhance_image(calibration_crop, brightness=brightness, contrast_factor=contrast_factor, tint=tint)
 
     for filename in image_files:
         img = cv2.imread(filename)
