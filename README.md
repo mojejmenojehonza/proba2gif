@@ -1,5 +1,5 @@
 # Proba -> Gif
-Automatically rotates and centers images from proba2 dumps and writes it into .gif or .webp file
+Automatically rotates and centers images from proba2 dumps and writes it into .gif or .webp file (corrupted images will be skipped)
 ## Installation
 ### Prerequisities
 python3, imageio , opencv and numpy
@@ -18,11 +18,11 @@ cli.py: error: the following arguments are required: input_dir`
 ## Example
 `python3 cli.py SWAP --output_file proba2.webp --tint normal`
 
-https://github.com/user-attachments/assets/b2af8fe5-5fd7-4aa5-a399-63d019edea57
+https://github.com/user-attachments/assets/ca17be23-c018-40ae-bc5e-f74e7f4e5f14
 
 `python3 cli.py SWAP --output_file proba2.webp --tint blue`
 
-https://github.com/user-attachments/assets/4a7a6381-294e-448e-8095-82852803bf89
+https://github.com/user-attachments/assets/06a06df8-08d7-4541-b908-984ad0205baa
 
 ## Credits
-credits to muellermilch.de on discord for providing me with a proba2 dump
+credits to muellermilch.de on discord for providing me with some proba2 dumps and finding bugs, much appreciated
