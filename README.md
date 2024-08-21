@@ -13,8 +13,10 @@ cd proba2gif
 python3 main.py -h
 ```
 ### Usage
-`cli.py [-h] [--output_file OUTPUT_FILE] [--calibration_image CALIBRATION_IMAGE] [--frame_duration FRAME_DURATION] [--tint {normal,green,pink,blue}] [--brightness BRIGHTNESS] [--contrast_factor CONTRAST_FACTOR] input_dir
-cli.py: error: the following arguments are required: input_dir`
+`cli.py input_dir [-h] [--output_file OUTPUT_FILE] [--calibration_image CALIBRATION_IMAGE] [--frame_duration FRAME_DURATION]
+             [--tint {normal,green,pink,pink2,blue,blue2,blue3,purple}] [--brightness BRIGHTNESS]
+             [--contrast_factor CONTRAST_FACTOR] [--loop_count LOOP_COUNT]
+`
 ## Example
 `python3 cli.py SWAP --output_file proba2.webp --tint normal`
 
